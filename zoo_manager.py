@@ -11,7 +11,7 @@ class Mammal(Animal):
         super().__init__(name, species)
 
     def give_birth(self):
-        print(f"{self._name} has given birth!")
+        return f"{self._name} the {self._species} has given birth"
     
 class Bird(Animal):
     def __init__(self, name, species, wingspan) -> None:
@@ -23,26 +23,26 @@ class Reptile(Animal):
         super().__init__(name, species)
 
     def bask_in_sun(self):
-        print(f"{self._name} is basking in the sun")
+        return f"{self._name} the {self._species} is basking in the sun"
 
 class Primate(Mammal):
     def __init__(self, name, species) -> None:
         super().__init__(name, species)
 
     def climb_trees(self):
-        print(f"{self._name} is climbing a tree!")
+        return f"{self._name} the {self._species} is climbing trees"
 
 class Marsupial(Mammal):
     def __init__(self, name, species) -> None:
         super().__init__(name, species)
 
     def carry_baby(self):
-        print(f"{self._name} is carrying its baby")
+        return f"{self._name} the {self._species} is carrying its baby"
 
 class Aviary():
     def __init__(self) -> None:
-        self._birds = {}
+        self._birds = []
 
 class ReptileEnclosure():
     def __init__(self) -> None:
-        self._reptiles = {}
+        self._reptiles = []
