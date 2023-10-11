@@ -38,3 +38,11 @@ class Marsupial(Mammal):
 
     def carry_baby(self):
         print(f"{self._name} is carrying its baby")
+
+class Aviary():
+    def __init__(self) -> None:
+        self._birds = {}
+
+class ReptileEnclosure():
+    def __init__(self) -> None:
+        self._reptiles = {}
